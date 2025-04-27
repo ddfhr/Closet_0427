@@ -21,12 +21,52 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
 Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
-C:\Users\RYJ\Desktop\closet4.0\closet\MDK-ARM\closet.uvprojx
-Project File Date:  04/25/2025
+C:\Users\RYJ\Desktop\closet_git\closet\Closet_0427\MDK-ARM\closet.uvprojx
+Project File Date:  04/27/2025
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil5 535\ARM\ARMCC\Bin'
 Build target 'closet'
+assembling startup_stm32f103xb.s...
+compiling DHT11.c...
+..\Hardware\DHT11.c(44): warning:  #68-D: integer conversion resulted in a change of sign
+  		else Response = -1;
+..\Hardware\DHT11.c(54): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin (DHT11_PORT, DHT11_PIN, 0);   // pull the pin low
+..\Hardware\DHT11.c(91): warning:  #1-D: last line of file ends without a newline
+  }
+..\Hardware\DHT11.c: 3 warnings, 0 errors
+compiling tem_balance.c...
+..\Software\tem_balance.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif 
+../Hardware/L9110.h(4): warning:  #1295-D: Deprecated declaration L9110_Init - give arg types
+  void L9110_Init();
+../Hardware/L9110.h(5): warning:  #1295-D: Deprecated declaration revolve - give arg types
+  void revolve();
+../Hardware/L9110.h(6): warning:  #1295-D: Deprecated declaration stop - give arg types
+  void stop();
+../Hardware/L9110.h(7): warning:  #1295-D: Deprecated declaration in_revolve - give arg types
+  void in_revolve();  // 反转（半速）
+..\Software\tem_balance.c(38): warning:  #1-D: last line of file ends without a newline
+  }
+..\Software\tem_balance.c: 6 warnings, 0 errors
+compiling humi_balance.c...
+..\Software\humi_balance.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif 
+..\Software\humi_balance.c: 1 warning, 0 errors
+compiling stm32f1xx_it.c...
+compiling L9110.c...
+..\Hardware\L9110.h(4): warning:  #1295-D: Deprecated declaration L9110_Init - give arg types
+  void L9110_Init();
+..\Hardware\L9110.h(5): warning:  #1295-D: Deprecated declaration revolve - give arg types
+  void revolve();
+..\Hardware\L9110.h(6): warning:  #1295-D: Deprecated declaration stop - give arg types
+  void stop();
+..\Hardware\L9110.h(7): warning:  #1295-D: Deprecated declaration in_revolve - give arg types
+  void in_revolve();  // 反转（半速）
+..\Hardware\L9110.c(10): warning:  #177-D: variable "sBreakDeadTimeConfig"  was declared but never referenced
+      TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig = {0};
+..\Hardware\L9110.c: 5 warnings, 0 errors
 compiling main.c...
 ../Software/humi_balance.h(8): warning:  #1-D: last line of file ends without a newline
   #endif 
@@ -49,10 +89,11 @@ compiling main.c...
 ../Hardware/HC-SR501.h(16): warning:  #1-D: last line of file ends without a newline
   #endif /* __BODY_HW_H */
 ../Core/Src/main.c: 10 warnings, 0 errors
+compiling tim.c...
 linking...
-Program Size: Code=17138 RO-data=2002 RW-data=76 ZI-data=3276  
+Program Size: Code=17650 RO-data=2002 RW-data=76 ZI-data=3348  
 FromELF: creating hex file...
-"closet\closet.axf" - 0 Error(s), 10 Warning(s).
+"closet\closet.axf" - 0 Error(s), 25 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -76,7 +117,7 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE:5.5.0
       Include file:  CMSIS\Core\Include\tz_context.h
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>
