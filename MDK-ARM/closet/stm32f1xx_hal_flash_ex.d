@@ -1,0 +1,30 @@
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+closet\stm32f1xx_hal_flash_ex.o: ../Core/Inc/stm32f1xx_hal_conf.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/CMSIS/Include/core_cm3.h
+closet\stm32f1xx_hal_flash_ex.o: D:\Keil5 535\ARM\ARMCC\Bin\..\include\stdint.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/CMSIS/Include/cmsis_version.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+closet\stm32f1xx_hal_flash_ex.o: D:\Keil5 535\ARM\ARMCC\Bin\..\include\stddef.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+closet\stm32f1xx_hal_flash_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h

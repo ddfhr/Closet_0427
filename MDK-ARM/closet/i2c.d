@@ -1,0 +1,32 @@
+closet\i2c.o: ../Core/Src/i2c.c
+closet\i2c.o: ../Core/Inc/i2c.h
+closet\i2c.o: ../Core/Inc/main.h
+closet\i2c.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+closet\i2c.o: ../Core/Inc/stm32f1xx_hal_conf.h
+closet\i2c.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
+closet\i2c.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
+closet\i2c.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
+closet\i2c.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h
+closet\i2c.o: ../Drivers/CMSIS/Include/core_cm3.h
+closet\i2c.o: D:\Keil5 535\ARM\ARMCC\Bin\..\include\stdint.h
+closet\i2c.o: ../Drivers/CMSIS/Include/cmsis_version.h
+closet\i2c.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+closet\i2c.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+closet\i2c.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
+closet\i2c.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+closet\i2c.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+closet\i2c.o: D:\Keil5 535\ARM\ARMCC\Bin\..\include\stddef.h
+closet\i2c.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
+closet\i2c.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
+closet\i2c.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
+closet\i2c.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h
+closet\i2c.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h
+closet\i2c.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
+closet\i2c.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
+closet\i2c.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
+closet\i2c.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
+closet\i2c.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
+closet\i2c.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+closet\i2c.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
+closet\i2c.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+closet\i2c.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
