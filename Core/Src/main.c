@@ -36,9 +36,17 @@
 #include "OLED.h"
 #include "MQ2.h"
 #include "Beep.h"
+
+
 #include "OLED.h" 
 #include "HC-SR501.h"
-
+#include "esp8266.h"
+#include "main_program.h"
+#include "time_handle.h"
+#include "cJSON.h"
+#include "time_handle.h"
+#include <string.h>
+#include "stdio.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -61,9 +69,10 @@
 int16_t ir =2;
 uint16_t mq2 = 3;
 int value = 2;
-int a = 1;
-//uint8_t byteNumber = 0x5a;
 uint8_t dataRcvd[10];
+int asd = 0;
+int rec_buffer = 256;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -86,7 +95,7 @@ void irmq2()
 		else
 		{
 			OLED_printf(2,0,"warnin");
-			BEEP_ON();
+		  BEEP_ON();
 		}
 }
 void Body_hc()
@@ -96,12 +105,22 @@ void Body_hc()
     {
         OLED_printf(3,0,"people");
 			 HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+//			 if (asd == 100)
+//			 {
+          send_json_data_t();
+			 //}
 
     }
     else
     {
        OLED_printf(3,0,"nonene");
 			 HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+//			 if (asd == 100)
+//			 {
+           //send_json_data_f();
+			               send_json_data_t();
+
+			// }
 
     }
 }
@@ -142,7 +161,9 @@ int main(void)
   MX_I2C1_Init();
   MX_USART1_UART_Init();
   MX_TIM4_Init();
+	 HAL_UART_IRQHandler(&huart1);
   /* USER CODE BEGIN 2 */
+	esp8266_send_cmd((uint8_t *)"AT+MQTTUSERCFG=0,1,\"" MQTT_CLIENT_ID "\",\"" MQTT_USER_NAME "\",\"" MQTT_PASSWD "\",0,0,\"\"\r\n", strlen("AT+MQTTUSERCFG=0,1,\"" MQTT_CLIENT_ID "\",\"" MQTT_USER_NAME "\",\"" MQTT_PASSWD "\",0,0,\"\"\r\n"), "OK");
 	OLED_init();
   HAL_TIM_Base_Start(&htim1);
 	JSQ_Init();
@@ -153,8 +174,8 @@ int main(void)
 	BODY_HW_Init();
   humi_pid_init();
 	temp_pid_init();
-	//HAL_UART_Transmit(&huart1,&byteNumber,1,HAL_MAX_DELAY);
-  ///HAL_UART_Receive(&huart1,dataRcvd,10,HAL_MAX_DELAY);
+  UART_Start_Receive_IT(&huart1,(uint8_t *)&rec_buffer,1);
+	esp8266_connect_server();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -171,15 +192,34 @@ int main(void)
 		 temp_updata_cal();
 		 irmq2();
 		 Body_hc();
-		 OLED_printf(0,0,"temp:%.f",Temperature);
-		 OLED_printf(1,0,"humi:%.f",Humidity );
+		 OLED_printf(0,0,"temp:%d",Temperature);
+		 OLED_printf(1,0,"humi:%d",Humidity );
 		 OLED_refresh_gram();
-
+     asd = asd +1;
+		 if(asd == 1)
+		 {
+			  send_json_data_th();
+			  asd = 0;
+			  if (value == 1)
+          send_json_data_t();
+				else
+          send_json_data_f();
+		 }
+		 if(asd == 1000)
+		 {
+			  send_json_data_th();
+			  if (value == 1)
+          send_json_data_t();
+				else
+          send_json_data_f();
+		 }
+		 
      HAL_Delay(100);
 		
   }
   /* USER CODE END 3 */
 }
+
 
 /**
   * @brief System Clock Configuration

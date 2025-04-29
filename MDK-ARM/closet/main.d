@@ -47,3 +47,8 @@ closet\main.o: ../Hardware/MQ2.h
 closet\main.o: ../Hardware/Beep.h
 closet\main.o: ../Hardware/HC-SR501.h
 closet\main.o: D:\Keil5 535\ARM\ARMCC\Bin\..\include\math.h
+closet\main.o: ../Hardware/esp8266.h
+closet\main.o: ../Software/main_program.h
+closet\main.o: ../Software/time_handle.h
+closet\main.o: ../Software/cJSON.h
+closet\main.o: D:\Keil5 535\ARM\ARMCC\Bin\..\include\string.h

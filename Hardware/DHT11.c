@@ -2,9 +2,9 @@
 
 uint8_t Rh_byte1,Rh_byte2, Temp_byte1, Temp_byte2;
 uint16_t SUM, RH, TEMP;
-float Temperature= 0;
+int Temperature= 0;
 
-float Humidity = 0;
+int Humidity = 0;
 uint8_t Presence = 0;
 
 

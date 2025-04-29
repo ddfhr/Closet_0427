@@ -32,9 +32,13 @@
 "closet\ir.o"
 "closet\mq2.o"
 "closet\oled.o"
+"closet\esp8266.o"
 "closet\pid.o"
 "closet\tem_balance.o"
 "closet\humi_balance.o"
+"closet\cjson.o"
+"closet\main_program.o"
+"closet\time_handle.o"
 --strict --scatter "closet\closet.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

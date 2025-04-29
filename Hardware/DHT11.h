@@ -6,8 +6,8 @@
 
 #define DHT11_PORT GPIOB
 #define DHT11_PIN GPIO_PIN_5
-extern float Temperature;
-extern float Humidity;
+extern int Temperature;
+extern int Humidity;
 
 void delay(uint16_t time);
 void Set_Pin_Input(GPIO_TypeDef *GPIOx,uint16_t GPIO_Pin);

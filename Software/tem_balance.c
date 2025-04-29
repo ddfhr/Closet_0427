@@ -14,7 +14,7 @@ void temp_pid_init()
 {
 	pid_set(&temp_location_pid, 1.0f, 0.0f,0.0f, 8000.0f, 0.01f);
 	
-	temp_target = 20;
+	temp_target = 23;
 }
 
 void temp_updata_cal()

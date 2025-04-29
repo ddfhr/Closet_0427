@@ -14,13 +14,15 @@ void humi_pid_init()
 {
 	pid_set(&humi_location_pid, 1.0f, 0.0f,0.0f, 8000.0f, 0.01f);
 	
-	humi_target = 40;
+	humi_target = 45;
 }
 
 void humi_updata_cal()
 {
 	humi_now = Humidity;
 	out_put=pid_cal(&humi_location_pid,humi_now, humi_target);
+		pid_set(&humi_location_pid, 1.0f, 0.0f,0.0f, 8000.0f, 0.01f);
+
 }
 void humi_balance()
 {

@@ -313,7 +313,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>4</Optim>
+            <Optim>1</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -817,6 +817,16 @@
               <FileType>5</FileType>
               <FilePath>..\Hardware\OLED.h</FilePath>
             </File>
+            <File>
+              <FileName>esp8266.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\esp8266.c</FilePath>
+            </File>
+            <File>
+              <FileName>esp8266.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Hardware\esp8266.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -851,6 +861,36 @@
               <FileName>humi_balance.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\Software\humi_balance.h</FilePath>
+            </File>
+            <File>
+              <FileName>cJSON.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\cJSON.c</FilePath>
+            </File>
+            <File>
+              <FileName>cJSON.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Software\cJSON.h</FilePath>
+            </File>
+            <File>
+              <FileName>main_program.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\main_program.c</FilePath>
+            </File>
+            <File>
+              <FileName>main_program.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Software\main_program.h</FilePath>
+            </File>
+            <File>
+              <FileName>time_handle.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\time_handle.c</FilePath>
+            </File>
+            <File>
+              <FileName>time_handle.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Software\time_handle.h</FilePath>
             </File>
           </Files>
         </Group>
